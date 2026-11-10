@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roxy · 浏览器会话</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <main>
+    <header><div><span class="eyebrow">ROXY BROWSER DEMO</span><h1>浏览器会话</h1><p>导入账号，使用指定代理打开 Roxy；登录状态保存在本机文件。</p></div><button id="settingsToggle" class="secondary">配置</button></header>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="settingsPanel" hidden>
+      <div class="section-head"><div><h2>运行配置</h2><p>所有保留配置均在此展示。保存后，新窗口使用新配置；已打开窗口沿用打开时的配置。</p></div><button id="saveSettings">保存配置</button></div>
+      <div id="settingsFields"></div>
+      <details class="policy"><summary>固定运行策略</summary><dl id="policies"></dl></details>
+    </section>
+    <section>
+      <div class="section-head"><div><h2>导入账号</h2><p>每行 邮箱----密码----2FA密钥，也支持 -- 和 ====；重复邮箱更新凭据。</p></div><label class="file-button secondary">选择 TXT<input type="file" id="importFile" accept=".txt,text/plain"></label></div>
+      <textarea id="importText" rows="3" autocomplete="off" spellcheck="false" placeholder="user@example.com----password----BASE32SECRET"></textarea>
+      <div class="import-footer"><span>账号凭据、代理及会话保存在此项目的 data 目录。</span><button id="importAccounts">导入</button></div>
+    </section>
+    <section>
+      <div class="section-head"><div><h2>账号 <span id="accountCount" class="count">0</span></h2><p>先设置代理，再打开或刷新。需要额外验证时，直接在 Roxy 窗口中完成。</p></div><button class="secondary" id="reloadAccounts">更新列表</button></div>
+      <div class="table-wrap"><table><thead><tr><th>账号 / 代理</th><th>会话</th><th>窗口状态</th><th>操作</th></tr></thead><tbody id="accountRows"></tbody></table></div>
+      <p id="emptyAccounts" class="empty">还没有账号，先导入一行开始。</p>
+    </section>
+    <footer>关闭网页不会关闭 Roxy。使用“关闭窗口”会先保存会话；直接关闭浏览器时保留最近有效快照。</footer>
+  </main>
+  <dialog id="proxyDialog"><form id="proxyForm"><h2>账号代理</h2><p id="proxyEmail"></p><label for="proxyValue">代理地址</label><input id="proxyValue" type="password" maxlength="4096" autocomplete="off" spellcheck="false" required placeholder="host:port:username:password"><label class="inline"><input id="showProxy" type="checkbox">显示代理内容</label><p class="hint">支持供应商格式和 HTTP、HTTPS、SOCKS5、SOCKS5H URL；保留原用户名及 SID。</p><div class="dialog-buttons"><button id="cancelProxy" type="button" class="secondary">取消</button><button type="submit">保存代理</button></div></form></dialog>
+</body>
+</html>

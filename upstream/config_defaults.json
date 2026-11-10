@@ -1,0 +1,310 @@
+{
+  "roxybrowser": {
+    "REGISTRATION_DRIVER": "protocol",
+    "ROXY_API_BASE": "http://127.0.0.1:50000",
+    "ROXY_PROFILE_ID": "",
+    "ROXY_WORKSPACE_ID": "",
+    "ROXY_PROJECT_ID": "",
+    "ROXY_WORKSPACE_LIST_PATH": "/browser/workspace",
+    "ROXY_WORKSPACE_LIST_METHOD": "GET",
+    "ROXY_OPEN_PATH": "/browser/open",
+    "ROXY_CLOSE_PATH": "/browser/close",
+    "ROXY_CREATE_PATH": "/browser/create",
+    "ROXY_OPEN_METHOD": "POST",
+    "ROXY_CLOSE_METHOD": "POST",
+    "ROXY_CREATE_METHOD": "POST",
+    "ROXY_OPEN_HEADLESS": false,
+    "REGISTRATION_HEADLESS": false,
+    "HEADED_CHROME_HEADLESS_MODE": "headless",
+    "REGISTRATION_WORKER_TIMEOUT_SECONDS": 900,
+    "BROWSER_OTP_READY_TIMEOUT_SECONDS": 60,
+    "ROXY_BLOCK_IMAGES": true,
+    "ROXY_REGISTRATION_LOW_TRAFFIC_MODE": false,
+    "ROXY_WEBRTC_REPLACE": false,
+    "ROXY_MAC_M3_WEBGL": false,
+    "ROXY_TRAFFIC_METERING": true,
+    "ROXY_TRAFFIC_METER_MODE": "browser_http",
+    "ROXY_CHATGPT_CONTRACT_TRACE_ENABLED": false,
+    "ROXY_RAW_TRACE_SAMPLE_PERCENT": 2,
+    "ROXY_PROFILE_CACHE_REUSE": false,
+    "ROXY_RANDOM_OS_ON_CREATE": true,
+    "ROXY_RANDOM_OS_CHOICES": "Windows,macOS",
+    "ROXY_RANDOM_PROFILE_NAME_ON_CREATE": true,
+    "ROXY_PROFILE_NAME_PREFIX": "rb",
+    "ROXY_OPEN_EXTRA_PARAMS": {},
+    "ROXY_SELENIUM_TIMEOUT": 90,
+    "ROXY_KEEP_BROWSER_OPEN": false,
+    "ROXY_API_RATE_LIMIT_PER_MINUTE": 90,
+    "ROXY_API_MAX_IN_FLIGHT": 25,
+    "ROXY_API_MIN_INTERVAL": 1.0,
+    "ROXY_API_RETRIES": 3,
+    "ROXY_API_RETRY_DELAY": 2,
+    "ROXY_ONE_PROFILE_PER_ACCOUNT": true,
+    "ROXY_DELETE_PROFILE_AFTER_RUN": true,
+    "ROXY_DELETE_PATH": "/browser/delete",
+    "ROXY_DELETE_METHOD": "POST",
+    "ROXY_DEFAULT_OS": "macOS",
+    "ROXY_DEFAULT_OS_VERSION": "",
+    "ROXY_CREATE_USE_PROXY_POOL": false,
+    "ROXY_PROXY_CHECK_CHANNEL": "IPRust.io",
+    "ROXY_PROFILE_CREATE_PAYLOAD": {
+      "name": "gpt-free-register",
+      "os": "macOS"
+    },
+    "ROXY_CODEX_CALLBACK_TIMEOUT": 180,
+    "ROXY_API_TOKEN": ""
+  },
+  "humanize": {
+    "ENABLE_HUMANIZE_DELAY": true,
+    "HUMANIZE_DELAY_FACTOR": 1.0,
+    "ENABLE_HUMANIZE_BROWSER_ACTIONS": true,
+    "HUMANIZE_DELAYS": {
+      "api": [
+        0.45,
+        1.35
+      ],
+      "navigate": [
+        1.2,
+        3.2
+      ],
+      "challenge": [
+        0.8,
+        2.4
+      ],
+      "otp_input": [
+        2.5,
+        8.0
+      ],
+      "form": [
+        1.8,
+        5.0
+      ],
+      "post_auth": [
+        1.5,
+        4.0
+      ],
+      "job_stagger": [
+        0.4,
+        1.8
+      ],
+      "click": [
+        0.15,
+        0.85
+      ],
+      "keystroke": [
+        0.035,
+        0.18
+      ],
+      "typing_pause": [
+        0.18,
+        0.75
+      ],
+      "page_warmup": [
+        0.7,
+        2.2
+      ]
+    }
+  },
+  "twofa": {
+    "ENABLE_2FA": false
+  },
+  "browser": {
+    "COUNTRY_LOCALE_PROFILE_MAP": {
+      "JP": "jp",
+      "CN": "cn",
+      "HK": "hk",
+      "TW": "tw",
+      "US": "us",
+      "CA": "us",
+      "SG": "sg",
+      "PH": "ph",
+      "VN": "vn",
+      "TH": "th",
+      "GB": "gb",
+      "AU": "gb",
+      "DE": "de",
+      "FR": "fr",
+      "NL": "nl",
+      "TR": "tr",
+      "BR": "br",
+      "IN": "in"
+    },
+    "BROWSER_LOCALE_PROFILES": {
+      "jp": {
+        "navigator_language": "ja-JP",
+        "navigator_languages": [
+          "ja-JP"
+        ],
+        "accept_language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Asia/Tokyo",
+        "timezone_offset_minutes": 540,
+        "timezone_name": "Japan Standard Time"
+      },
+      "cn": {
+        "navigator_language": "zh-CN",
+        "navigator_languages": [
+          "zh-CN"
+        ],
+        "accept_language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Asia/Shanghai",
+        "timezone_offset_minutes": 480,
+        "timezone_name": "China Standard Time"
+      },
+      "us": {
+        "navigator_language": "en-US",
+        "navigator_languages": [
+          "en-US"
+        ],
+        "accept_language": "en-US,en;q=0.9",
+        "timezone_iana": "America/Los_Angeles",
+        "timezone_offset_minutes": -420,
+        "timezone_name": "Pacific Daylight Time"
+      },
+      "ph": {
+        "navigator_language": "en-PH",
+        "navigator_languages": [
+          "en-PH",
+          "en-US",
+          "en"
+        ],
+        "accept_language": "en-PH,en-US;q=0.9,en;q=0.8",
+        "timezone_iana": "Asia/Manila",
+        "timezone_offset_minutes": 480,
+        "timezone_name": "Singapore Standard Time"
+      },
+      "sg": {
+        "navigator_language": "en-SG",
+        "navigator_languages": [
+          "en-SG"
+        ],
+        "accept_language": "en-SG,en-US;q=0.9,en;q=0.8",
+        "timezone_iana": "Asia/Singapore",
+        "timezone_offset_minutes": 480,
+        "timezone_name": "Singapore Standard Time"
+      },
+      "vn": {
+        "navigator_language": "vi-VN",
+        "navigator_languages": [
+          "vi-VN",
+          "vi",
+          "en-US",
+          "en"
+        ],
+        "accept_language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Asia/Ho_Chi_Minh",
+        "timezone_offset_minutes": 420,
+        "timezone_name": "SE Asia Standard Time"
+      },
+      "th": {
+        "navigator_language": "th-TH",
+        "navigator_languages": [
+          "th-TH",
+          "th",
+          "en-US",
+          "en"
+        ],
+        "accept_language": "th-TH,th;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Asia/Bangkok",
+        "timezone_offset_minutes": 420,
+        "timezone_name": "SE Asia Standard Time"
+      },
+      "hk": {
+        "navigator_language": "zh-HK",
+        "navigator_languages": [
+          "zh-HK"
+        ],
+        "accept_language": "zh-HK,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6",
+        "timezone_iana": "Asia/Hong_Kong",
+        "timezone_offset_minutes": 480,
+        "timezone_name": "Hong Kong Standard Time"
+      },
+      "tw": {
+        "navigator_language": "zh-TW",
+        "navigator_languages": [
+          "zh-TW"
+        ],
+        "accept_language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Asia/Taipei",
+        "timezone_offset_minutes": 480,
+        "timezone_name": "Taipei Standard Time"
+      },
+      "gb": {
+        "navigator_language": "en-GB",
+        "navigator_languages": [
+          "en-GB"
+        ],
+        "accept_language": "en-GB,en-US;q=0.9,en;q=0.8",
+        "timezone_iana": "Europe/London",
+        "timezone_offset_minutes": 60,
+        "timezone_name": "British Summer Time"
+      },
+      "de": {
+        "navigator_language": "de-DE",
+        "navigator_languages": [
+          "de-DE"
+        ],
+        "accept_language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Europe/Berlin",
+        "timezone_offset_minutes": 120,
+        "timezone_name": "Central European Summer Time"
+      },
+      "fr": {
+        "navigator_language": "fr-FR",
+        "navigator_languages": [
+          "fr-FR"
+        ],
+        "accept_language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Europe/Paris",
+        "timezone_offset_minutes": 120,
+        "timezone_name": "Central European Summer Time"
+      },
+      "nl": {
+        "navigator_language": "nl-NL",
+        "navigator_languages": [
+          "nl-NL"
+        ],
+        "accept_language": "nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Europe/Amsterdam",
+        "timezone_offset_minutes": 120,
+        "timezone_name": "Central European Summer Time"
+      },
+      "tr": {
+        "navigator_language": "tr-TR",
+        "navigator_languages": [
+          "tr-TR",
+          "tr",
+          "en-US",
+          "en"
+        ],
+        "accept_language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "Europe/Istanbul",
+        "timezone_offset_minutes": 180,
+        "timezone_name": "Turkey Standard Time"
+      },
+      "br": {
+        "navigator_language": "pt-BR",
+        "navigator_languages": [
+          "pt-BR",
+          "pt",
+          "en-US",
+          "en"
+        ],
+        "accept_language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+        "timezone_iana": "America/Sao_Paulo",
+        "timezone_offset_minutes": -180,
+        "timezone_name": "E. South America Standard Time"
+      },
+      "in": {
+        "navigator_language": "en-IN",
+        "navigator_languages": [
+          "en-IN",
+          "en"
+        ],
+        "accept_language": "en-IN,en;q=0.9",
+        "timezone_iana": "Asia/Kolkata",
+        "timezone_offset_minutes": 330,
+        "timezone_name": "India Standard Time"
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "BROWSER_LOCALE_PROFILES": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "BROWSER_OTP_READY_TIMEOUT_SECONDS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/headed_chrome_reference/adapter.py"
+    ]
+  },
+  "COUNTRY_LOCALE_PROFILE_MAP": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ENABLE_2FA": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/headed_chrome_reference/adapter.py",
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py"
+    ]
+  },
+  "ENABLE_CODEX_AUTO": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py"
+    ]
+  },
+  "ENABLE_HUMANIZE_BROWSER_ACTIONS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxy_domains/browser.py"
+    ]
+  },
+  "ENABLE_HUMANIZE_DELAY": {
+    "display": "editable",
+    "files": [
+      "upstream/core/humanize.py"
+    ]
+  },
+  "HUMANIZE_DELAYS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/humanize.py"
+    ]
+  },
+  "HUMANIZE_DELAY_FACTOR": {
+    "display": "editable",
+    "files": [
+      "upstream/core/humanize.py"
+    ]
+  },
+  "PLAN_CHECK_TIMEOUT": {
+    "display": "editable",
+    "files": [
+      "upstream/core/session_refresh_domains/session.py"
+    ]
+  },
+  "REGISTRATION_HEADLESS": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/headed_chrome_reference/adapter.py",
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py"
+    ]
+  },
+  "REGISTRATION_WORKER_TIMEOUT_SECONDS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/headed_chrome_reference/adapter.py"
+    ]
+  },
+  "ROXY_API_BASE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_API_MAX_IN_FLIGHT": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_API_RATE_LIMIT_PER_MINUTE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_API_RETRIES": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_API_RETRY_DELAY": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_API_TOKEN": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/transport.py"
+    ]
+  },
+  "ROXY_CHATGPT_CONTRACT_TRACE_ENABLED": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py",
+      "upstream/core/session_refresh_domains/probe.py"
+    ]
+  },
+  "ROXY_CLOSE_METHOD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_CLOSE_PATH": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_CREATE_METHOD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_CREATE_PATH": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_CREATE_USE_PROXY_POOL": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_DEFAULT_OS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_DEFAULT_OS_VERSION": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_DELETE_METHOD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_DELETE_PATH": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_DELETE_PROFILE_AFTER_RUN": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_auth_domains/login.py",
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_KEEP_BROWSER_OPEN": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_domains/browser.py",
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_MAC_M3_WEBGL": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py",
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_ONE_PROFILE_PER_ACCOUNT": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_auth_domains/login.py",
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_OPEN_EXTRA_PARAMS": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_OPEN_HEADLESS": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_domains/browser.py",
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_OPEN_METHOD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_OPEN_PATH": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_PROFILE_CACHE_REUSE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxy_domains/browser.py",
+      "upstream/core/roxy_profile_pool.py",
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_PROFILE_CREATE_PAYLOAD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_PROFILE_ID": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_PROFILE_NAME_PREFIX": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_PROJECT_ID": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxy_profile_pool.py",
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_PROXY_CHECK_CHANNEL": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_RANDOM_OS_CHOICES": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_RANDOM_OS_ON_CREATE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_RANDOM_PROFILE_NAME_ON_CREATE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py"
+    ]
+  },
+  "ROXY_REGISTRATION_LOW_TRAFFIC_MODE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxy_auth_domains/candidate.py",
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_manual_window.py"
+    ]
+  },
+  "ROXY_SELENIUM_TIMEOUT": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxy_auth_domains/candidate.py",
+      "upstream/core/roxy_domains/browser.py",
+      "upstream/core/roxy_domains/email_auth.py",
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py",
+      "upstream/core/roxybrowser_domains/transport.py",
+      "upstream/core/session_refresh_domains/probe.py"
+    ]
+  },
+  "ROXY_TRAFFIC_METERING": {
+    "display": "fixed",
+    "files": [
+      "upstream/core/roxy_domains/registration.py",
+      "upstream/core/roxy_headed_registration.py"
+    ]
+  },
+  "ROXY_WEBRTC_REPLACE": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/lifecycle.py",
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_WORKSPACE_ID": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/profile_config.py"
+    ]
+  },
+  "ROXY_WORKSPACE_LIST_METHOD": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/inventory.py"
+    ]
+  },
+  "ROXY_WORKSPACE_LIST_PATH": {
+    "display": "editable",
+    "files": [
+      "upstream/core/roxybrowser_domains/inventory.py"
+    ]
+  }
+}
